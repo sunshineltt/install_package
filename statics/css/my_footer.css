@@ -1,0 +1,33 @@
+
+ .footbox{
+ 	height:30px;
+ 	width:100%;
+ 	background:#000;
+ 	line-height:30px;
+ 	padding-top:50px;
+ 	padding-bottom:10px;
+  }
+  
+ .foot{
+ 	/*height:80px;*/
+ 	width:950px;
+  	margin:0 auto;
+  	text-align:center;
+ }
+ .shu{
+ 	margin-left:10px;
+ 	margin-right:10px;
+ 	color:#999;
+ }
+ 
+ .foot>a{
+ 	color:#fff;
+ }
+ .foot>a:hover{
+ 	color:#ba9a5a;
+ }
+ .banquan{
+ 	color:#999;
+ 	margin-left:50px;
+
+ }

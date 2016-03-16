@@ -1,0 +1,104 @@
+ 
+
+.swpzbox{
+	width:100%;
+	height:515px;
+	background:#000;
+ 	padding-top:150px;
+
+}
+.swpz{
+	width:950px;
+	height:515px;
+	margin:0 auto;
+	/*background:#fff;*/
+}
+.swpz-top{
+	width:950px;
+	height:390px;
+	font-size:0;
+	/* background:yellow; */
+}
+ 
+.swpz-bottom{
+	width:950px;
+	height:85px;
+	background:#000;
+}
+.swpz-bottom-left{
+	float:left;
+	padding-top:30px;
+	color:#fff;
+	padding-left:30px;
+}
+.swpz-bottom-right{
+	float:right;
+	padding-top:40px;
+	padding-right:50px;
+}
+.swpz-bottom-right a{
+	color:#433A31;
+	font-size:13px;
+
+}
+.swpz-bottom-right a:hover{
+	color:#fff;
+	}
+
+/* /list_swpz2开始 */
+
+.swpzbox-chanpin{
+	width:100%;
+	padding-top:150px;
+	height:400px;
+	background:#000;
+}
+.swpz-chanpin{
+	width:1000px;
+	height:400px;
+	margin:0 auto;
+	background:#fff;
+}
+.swpz-top-chanpin{
+	width:1000px;
+	height:361px;
+
+}
+.chanpinbox{
+	height:355px;
+	width:100%;
+	background:#000;
+}
+.chanpinboxda{
+	height:680px;
+	width:100%;
+	background:#000;
+}
+.chanpinda{
+	height:680px;
+	width:960px;
+	background:#fff;
+	margin:0 auto;
+
+}
+
+
+.chanpin{
+	height:335px;
+	width:960px;
+	background:#fff;
+	margin:0 auto;
+}
+.chanpin1{
+	height:294px;
+	width:210px;
+	background:blue;
+	float:left;
+	margin-right:10px;
+
+}
+.chanpin1 img{
+	width:234px;
+	height:220px;
+}
+

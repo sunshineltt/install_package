@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>
+    {if isset($SEO['title']) && !empty($SEO['title'])}
+            {$SEO['title']}
+    {/if}
+    {$SEO['site_title']}
+</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+
+
+<link href="{CSS_PATH}my_header.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}reset.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}default_blue.css" rel="stylesheet" type="text/css" />
+
+ 
+<script type="text/javascript" src="{JS_PATH}jquery2.2.0.js"></script>
+<script type="text/javascript" src="{JS_PATH}header.js"></script>
+ </head>
+<body>
+    <div class="box">
+        <div class="left">
+            <a href=""><img src="{IMG_PATH}56.jpg" alt="" /></a>
+        </div><!-- left结束 -->
+        <div class="right">
+            {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+
+            {loop $data $r}
+                <div class="{$r[catdir]}">
+                    {$r[catname]}
+                    {pc:content action="category" catid="$r[catid]" num="25" siteid="$siteid" order="listorder ASC"}
+                    <ul class="erji">
+                         {loop $data $v}
+                            <li><a href="">{$v[catname]}</a></li>
+                        {/loop}
+                    </ul>
+                    {/pc}
+                 </div>
+            {/loop}
+            {/pc}
+            
+        </div><!-- right结束 -->
+    </div><!-- box结束 -->
+    
+ 

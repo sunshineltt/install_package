@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>
+        PHPCMS演示站</title>
+<meta name="keywords" content="联系方式">
+<meta name="description" content="联系方式">
+
+
+<!-- <link href="http://localhost/statics/css/my_header.css" rel="stylesheet" type="text/css" /> -->
+<link href="http://localhost/statics/css/my_header.css" rel="stylesheet" type="text/css" />
+ 
+
+
+<script type="text/javascript" src="http://localhost/statics/js/jquery2.2.0.js"></script>
+<script type="text/javascript" src="http://localhost/statics/js/header.js"></script>
+ </head>
+<body>
+   <!--   <div class="box1">
+      <div class="left1">
+          <a href=""><img src="http://localhost/statics/images/56.jpg" alt="" /></a>
+      </div>left结束
+      <div class="right1">
+                                   <div class="xiangshui_leibieaa">
+                  香水列表a                                    <ul class="erji">
+                                         </ul>
+                                 </div>
+                        <div class="shengwupingzhou">
+                  生物平皱                                    <ul class="erji">
+                                         </ul>
+                                 </div>
+                        <div class="changxiaopaixing">
+                  畅销排行                                    <ul class="erji">
+                                         </ul>
+                                 </div>
+                        <div class="mingxingzhengyan">
+                  明星证言                                    <ul class="erji">
+                                         </ul>
+                                 </div>
+                        <div class="pifuceshi">
+                  皮肤测试                                    <ul class="erji">
+                                         </ul>
+                                 </div>
+                              
+      </div>right结束
+       </div>box结束
+    -->
+ 
+    <div class="topbox">
+       <div class="top">
+           <div class="top-up">
+               <div class="top-up-left">
+                  <a href="http://localhost"> 
+                    <img src="http://localhost/statics/images/logo.jpg" alt="" style="width:192px;height:107px;" >
+                </a>
+               </div><!-- top-up-left结束 -->
+               <div class="top-up-right">
+                   <a href="">登录</a><span style="color:#999">/</span><a href="">注册</a>
+               </div><!-- top-up-right结束 -->
+           </div><!-- top-up结束 -->
+           <div class="top-bottom">
+              <div class="top-bottom-left">
+                                                    <li>
+                          <a href=""></a>
+                    </li>
+                                    <li>
+                          <a href=""></a>
+                    </li>
+                                    <li>
+                          <a href=""></a>
+                    </li>
+                                    <li>
+                          <a href=""></a>
+                    </li>
+                                    <li>
+                          <a href=""></a>
+                    </li>
+                                
+
+            </div><!-- top-bottom-left结束 -->
+              <div class="top-bottom-right">
+                  
+              </div><!-- top-bottom-right结束 -->
+           </div><!-- top-bottom结束 -->
+       </div><!-- top结束 -->
+   </div><!-- topbox结束 -->
+
+
+ 
+
+    
+ 
+<div class="big">
+    
+</div>
+<div class="footer">
+<p class="info">
+<a href="http://localhost/html/about/aboutus/" target="_blank">关于我们</a> |  
+<a href="http://localhost/html/about/contactus/" target="_blank">联系方式</a> |  
+<a href="http://localhost/index.php?m=content&c=index&a=lists&catid=4" target="_blank">版权声明</a> |  
+<a href="http://localhost/html/about/hr/" target="_blank">招聘信息</a> |  
+<a href="http://localhost/index.php?m=link" target="_blank">友情链接</a>
+<br />
+Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.6.0</em> &copy; 2015 <img src="http://localhost/statics/images/copyright.gif"/></p>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(".picbig").each(function(i){
+		var cur = $(this).find('.img-wrap').eq(0);
+		var w = cur.width();
+		var h = cur.height();
+	   $(this).find('.img-wrap img').LoadImage(true, w, h,'http://localhost/statics/images/msg_img/loading.gif');
+	});
+})
+</script>
+</body>
+</html>

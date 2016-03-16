@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>
+    {if isset($SEO['title']) && !empty($SEO['title'])}
+            {$SEO['title']}
+    {/if}
+    {$SEO['site_title']}
+</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+
+<link href="{CSS_PATH}my_header.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}my_category.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}my_footer.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}my_index.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}my_swpz.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}my_cxph.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}my_list.css" rel="stylesheet" type="text/css" />
+
+
+ <script src="{JS_PATH}functions.js"></script>
+<script src="{JS_PATH}animate.js"></script>
+ <script type="text/javascript" src="{JS_PATH}jquery2.2.0.js"></script>
+
+ 
+  <script type="text/javascript" src="{JS_PATH}my_header.js"></script>
+ </head>
+<body>
+   
+ 
+    <div class="topbox">
+       <div class="top">
+           <div class="top-up">
+               <div class="top-up-left">
+                  <a href="{siteurl($siteid)}"> 
+                    <img src="{IMG_PATH}yisha/logo.jpg" alt="" style="width:192px;height:107px;" >
+                </a>
+               </div><!-- top-up-left结束 -->
+               <div class="top-up-right">
+                   <a href="">登录</a>
+                   <span style="color:#999">/</span>
+                   <a href="">注册</a>
+               </div><!-- top-up-right结束 -->
+           </div><!-- top-up结束 -->
+
+
+
+
+           <div class="top-bottom">
+              <div class="top-bottom-left">
+                 {pc:content action="category" catid="0" num="4" siteid="$siteid" order="listorder ASC"}
+                {php $a=0}
+                
+                {loop $data $v}
+                {$a++}
+                {if $a==1}
+                    <li class="top-yiji"><!-- 一级菜单的显示 -->
+                          <a href="">{$v[catname]}</a>
+                          <div class="erjibox">
+                            <div class="erji-topbox">
+                              <div class="erji-top">
+                                 {pc:content action="category" catid="$v[catid]" siteid="$siteid" num="25"}
+                                  {php $p=0}
+                                  {loop $data $i} 
+                                  {$p++}
+                                  {if $p==2}
+                                <dl class="erji-xiala1">
+                                       <dt><!-- 二级菜单的显示 -->
+                                         {$i[catname]}
+                                       </dt>
+                                       {pc:content action="category" catid="$i[catid]"  num="25"}
+                                      {php $num=0}
+                                      {loop $data $j} 
+                                      {$num++}
+                                        <dd id="zuozuo">
+                                             <a  href="{$j[url]}">{$j[catname]}</a>
+                                         </dd>  
+                                      {/loop}
+                                      {/pc}
+                                     
+                                  </dl><!-- erji-xiala1结束 -->
+                                  {else}
+                                  <dl class="erji-xiala1">
+                                       <dt><!-- 二级菜单的显示 -->
+                                         {$i[catname]}
+                                       </dt>
+                                       {pc:content action="category" catid="$i[catid]"  num="25"}
+                                      {php $num=0}
+                                      {loop $data $j} 
+                                      {$num++}
+                                        <dd id="youyou">
+                                             <a  href="{$j[url]}">{$j[catname]}</a>
+                                         </dd>  
+                                      {/loop}
+                                      {/pc}
+                                   </dl><!-- erji-xiala1结束 -->
+                                  {/if}
+                                 {/loop}
+
+                                 {/pc}
+                               </div><!-- erji-top结束 -->
+                            </div><!-- erji-topbox结束 -->
+                            <ul class="erji-bottom">
+                                <li>
+                                <a href="$r[url]"><img src="{IMG_PATH}yisha/1index/sw1.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="$r[url]"><img src="{IMG_PATH}yisha/1index/sw2.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="$r[url]"><img src="{IMG_PATH}yisha/1index/sw3.jpg" alt=""></a>
+                              </li> 
+                                
+                            </ul><!-- erji-bottom结束 -->
+                          </div><!-- erjibox结束 -->
+                    </li>
+                {/if}
+
+                {if $a==2}
+                    <li  class="top-yiji">
+                      <a href="">{$v[catname]}</a>
+                       <div class="erji-topbox1"> 
+                          <div class="erji-top1">
+                            {pc:content action="category" catid="$v[catid]" num="25" }
+                            {loop $data $i}
+                            <dl class="changxiao1">
+                               <dt class="title" style="margin-bottom:0px">{$i[catname]}</dt>
+                               {pc:content action="category" catid="$i[catid]" num="25"}
+                               {loop $data $j}
+                               <dd>
+                                <a href="{$j[url]}">
+                                <ul class="yige">
+                                   <li class="img-xiao">
+                                    <img src="{$j[image]}" alt="">
+                                  </li>
+                                  <li>
+                                    <span class="up">{$j[catname]}</span>
+                                    <span class="bottom">{$j[description]}</span>
+                                  </li>
+                                </ul>
+                                </a>
+                              </dd>
+                               {/loop}
+                               {/pc}
+                            </dl><!-- changxiao1结束 -->
+                            {/loop}
+                            {/pc}
+                           </div><!-- erji-top1结束 -->
+                        </div><!-- erji-topbox1结束 -->
+                       
+                     </li>
+                 {/if} 
+                 {if $a==3}
+                  <li  class="top-yiji">
+                  <a href="">{$v[catname]}</a>
+                  <div class="erji-topbox1"  style="left:-375px;">
+                    <div class="erji-mxzy">
+                      {pc:content action="category" catid="$v[catid]" num="25"}
+                      {php $b=0}
+                      {loop $data $i}
+                      {$b++}
+                      {if $b==1}
+                      <dl class="mxzy">
+                       
+                        <dt>{$i[catname]}</dt>
+                        <dd>
+                          {pc:content action="category" catid="$i[catid]" num="25"}
+                          {loop $data $j}
+                           <ul>
+                              <li>
+                                <a href="{$k[url]}">{$j[catname]}</a>
+                              </li>
+                            </ul>
+                           {/loop}
+                          {/pc}
+                        </dd>
+
+                       </dl>
+                      {/if}
+
+                      {if $b==2}
+                      <dl class="mxzy">
+                        <dt>{$i[catname]}</dt>
+                        {pc:content action="category" catid="$i[catid]" num="25"}
+                        {loop $data $m}
+                            <dd><a href="{$m[url]}">{$m[catname]}</a></dd>
+                        {/loop}
+                        {/pc}
+                       </dl>
+                       {/if}  
+                      {/loop}
+                      {/pc}
+                    </div><!-- erji-mxzy结束 -->
+                  </div><!-- erji-topbox1结束 -->
+                  </li>
+                 {/if}
+
+
+
+<!-- {$v[url]} -->
+                 {if $a==4}
+                 <li  class="top-yiji">
+                  <a href="">{$v[catname]}</a>
+                  <div class="erji-topbox1"  style="left:-462px;">
+                    <div class="erji-mxzy">
+                      {pc:content action="category" catid="$v[catid]" num="25"}
+                       {loop $data $c}
+                        <dl class="mxzy">
+                         <dt>{$c[catname]}</dt>
+                        <dd>
+                          {pc:content action="category" catid="$c[catid]" num="25"}
+                          {loop $data $d}
+                              <a href="{$d[url]}">
+                               <img src="{$d[image]}" alt="" />
+                             </a>
+                            {/loop}
+                          {/pc}
+                        </dd>
+
+                       </dl>
+                      
+                       
+                      {/loop}
+                      {/pc}
+                    </div><!-- erji-mxzy结束 -->
+                  </div><!-- erji-topbox1结束 -->
+                  </li>
+                 {/if}
+ 
+                {/loop}
+                {/pc}
+             </div><!-- top-bottom-left结束 -->
+
+
+              <div class="top-bottom-right">
+                {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                {if $r[catid]>=48&&$r[catid]<=52}
+                     <li>
+                          <a href="{$r[url]}">{$r[catname]}</a>
+                    </li>
+                {/if}
+                {/loop}
+                {/pc}
+                  
+              </div><!-- top-bottom-right结束 -->
+           </div><!-- top-bottom结束 -->
+       </div><!-- top结束 -->
+   </div><!-- topbox结束 -->
+
+
+ 
+
+    
+ 

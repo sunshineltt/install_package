@@ -1,0 +1,34 @@
+{template "content","header"}
+ 
+
+
+<div class="swpzbox">
+        <div class="swpz">
+        {pc:content action="lists" num="25" catid="$catid" moreinfo="1"}
+        {loop $data $r}
+              <div class="swpz-top">
+                <!-- <img src="{IMG_PATH}yisha/{$catid}.png}" />  -->
+                  <img  src="{$r[thumb]}" alt="">
+             </div><!-- swpz-top结束 -->
+         {/loop}
+        {/pc}
+            <div class="swpz-bottom">
+                {pc:content action="lists" num="25" catid="$catid" moreinfo="1"}
+                {loop $data $r}
+                <div class="swpz-bottom-left">
+                    <h2>{$r[title]}</h2>
+                </div><!-- swpz-bottom-left结束 -->
+                {/loop}
+                {/pc}
+                <div class="swpz-bottom-right">
+                    首页 > {catpos($CATEGORYS[$catid][parentid])}
+                </div><!-- swpz-bottom-right结束 -->
+            
+            </div><!-- swpz-bottom结束 -->
+        </div><!-- swpz结束 -->
+    </div><!-- swpzbox结束 -->
+     
+
+
+
+{template "content","footer"}

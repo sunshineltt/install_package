@@ -1,0 +1,70 @@
+{template "content","header"}
+
+
+
+
+
+<div class='boxbox'>	
+
+ <div class="boxbox-2">
+        <div class="meiji">
+            <b>美肌专家</b>
+            <b style="color:#603F1A">Experts & Videos</b>
+            <div class="mei">
+                <div class="ji"><span>岳霞(Daisy)</span>
+                    <img src="{IMG_PATH}yisha/6list/54.jpg">
+                    <p>英国reading大学进修美容技术专业 美国JAMES药物实验室生物美容专家 中国医疗美容促进会委员 中国美容领袖高峰论坛特邀嘉宾 《胶原蛋白与女人》作者</p>
+                </div>
+            </div>
+            
+            <div class="dajian">
+                <img src="{IMG_PATH}yisha/6list/18.png">
+                <img src="{IMG_PATH}yisha/6list/19.png" style="float:right">
+            </div>
+            <div class="meili">
+                 <h1>魅力讲堂</h1>
+               
+                {pc:content action="category" catid="$catid" num="3" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                <dl>
+                    <dt>{$r[catname]}<a href="{$r[url]}">更多>></a></dt>
+
+                    {pc:content action="lists" catid="$r[catid]" num="8" siteid="$siteid" order="listorder ASC"}
+                    {loop $data $v}
+                    <dd><a href="{$v[url]}">{$v[title]}</a></dd>
+                    <!--<dd><a href="$v[url]}">夏日拯救晒伤肌肤的妙方</a></dd>-->
+                    {/loop}
+                    {/pc}
+                </dl>
+                {/loop}
+                {/pc}
+
+               
+
+
+
+              <!--   <dl class="jin">
+                  <dt>抗衰探秘<a href="">更多>></a></dt>
+                  <dd>金木水火土五种体质，看透女人的…</dd>
+                  <dd>对抗“往下”的岁月 紧致肌肤的1…</dd>
+                  <dd>祛皱为什么一定要分龄？</dd>
+              </dl> 
+              <dl>
+                  <dt>美容秘籍<a href="">更多>></a></dt>
+                  <dd>为年轻加分</dd>
+                  <dd>80后女孩正确的生活方式，可以让…</dd>
+                  <dd>看韩国女明星怎么保养肌肤</dd>
+                  <dd>变身白富美</dd>
+                  <dd>正确护肤有妙法</dd>
+                  <dd>暧昧女性一定要知道的按摩步骤</dd>
+              </dl>
+               -->
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{template "content","footer"}

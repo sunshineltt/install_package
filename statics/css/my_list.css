@@ -1,0 +1,338 @@
+/*微商专区*/
+ .center{
+ 	box-sizing: border-box;
+	padding-top:100px;
+	/*width:950px;*/
+	width:100%;
+ 	margin: 0 auto;
+	background:#000;
+	border: 1px solid black;
+} 
+.weishang{
+	/*width: 1308px;*/
+	height: 605px;
+	width:100%;
+	text-align:center;
+  	overflow: hidden;
+}
+.weishang img{
+ 	width:100%;
+}
+
+/* 伊人空间 */
+.www{
+	background:#000;
+	width:100%;
+	margin:0 auto;
+}
+ .centeryr{
+ 	box-sizing: border-box;
+ 	width:950px;
+	/*width:100%;*/
+ 	margin: 0 auto;
+	background:#000;
+	border: 1px solid black;
+} 
+.huazhuang{
+	background: white;
+	width: 950px;margin-top:140px;
+}
+.huazhuang h1{
+	height: 100px;
+	color:black;
+	border-bottom:1px solid #993300;
+	line-height: 100px;
+	width:890px;
+	margin-left:30px; 
+	font-size:24px;
+}
+.hua{
+	width:950px;
+}
+.hua img{
+	width:950px;
+}
+.hua pre{
+	line-height: 26px;font-size: 14px;margin-top:70px;
+}
+
+/*专柜导航*/
+.www_2{
+	padding-top:100px;
+	width:950px;
+	text-align:center;
+  }
+
+
+/*------------美肌专家------------*/
+
+.boxbox{
+	width:100%;
+	background:#000;
+	margin:0 auto;
+	padding-top:52px;
+}
+ .boxbox-2{
+ 	width:950px;
+ }
+
+.meiji{
+	width: 950px;overflow: hidden;
+	margin-top: 190px;
+ }
+.meiji b{
+	font-size:24px;
+	color: white;
+	margin-left:30px;
+}
+.mei{
+	width: 950px;
+	height: 478px;
+	overflow: hidden;
+	margin-top:10px;
+	background: url("../images/yisha/6list/55.jpg"); 
+}
+.ji,.zhou{
+	width: 284px;
+	height: 431px;
+	margin:30px 0 0 650px;
+	background:rgba(0,0,0,0.8);
+	border:1px solid black;
+	color: white;
+	font-size: 16px;
+}
+.ji span{
+	display: block;
+	font-size: 18px;
+	margin:-5px 0 20px 20px;
+}
+.ji img{
+	margin-left:60px;
+}
+.ji p{
+	margin:30px 20px 0 20px;
+	line-height:24px;
+}
+.dajian img{
+	margin:30px 20px 15px 20px;
+}
+.meili,.huli{
+	min-height: 360px;
+	color: white;
+	background-color: #22122D;
+	overflow: hidden;
+}
+.meili h1,.huli h1{
+	width: 900px;
+	border-bottom:1px dotted #5B4B66;
+	height:40px;
+	margin:40px 25px 20px 25px; 
+	color:#fff;
+	font-size:24px;
+}
+
+.meili dl{
+	color:#EBDDA4; 
+	float: left;
+}
+.meili dt{
+	margin:0 15px 0 20px;
+	font-size: 16px;
+	font-weight: bold;
+	width: 270px;
+	line-height: 30px;
+	border-bottom:1px dashed white;
+	color:#EBDDA4;
+}
+.meili dt a{
+	float: right;font-size: 13px;
+}
+.meili dd{
+	margin:15px 15px 15px 35px;
+}
+.meili a{
+	color: #EBDDA4;
+}
+.meili a:hover{
+	color: white;
+}
+.jin{
+	/*height:200px;*/
+	border-left:1px solid white;
+	border-right:1px solid white;
+}
+.meili span{
+	float:right;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+.huli{
+	margin-top: 140px;
+	position:relative;
+	padding-bottom:30px;
+
+
+}
+.huli ul{
+	width:400px;
+	margin:0 0 40px 30px;
+	float: left;
+}
+.huli li{
+	float: left;
+	margin-right:30px;
+}
+.huli li a{
+	color: white;
+	font-size:14px;
+}
+.huli li a:hover{
+    color:#FFC17E;
+    font-weight: bold;
+}
+.bufoot{
+  	position:absolute;
+	bottom:0px;
+	height:60px;
+	width:100%;
+	text-align:center;
+	line-height:60px;
+  }
+ .bufoot a{
+ 	margin-right:20px;
+ 	color:yellow;
+ }
+ .bufoot a:hover{
+ 	color:#fff;
+ }
+.bigbox{
+	width:100%;
+	margin:0 auto;
+	background:#000;
+	margin-top:-10px;
+
+}
+
+/*----------品牌传奇-------------*/
+#daohang{
+	width: 950px;
+	height:46px;
+	background:url("../images/yisha/7chuanqi/8.png");
+ 	 
+}
+ 
+.zhong{
+	width:440px;
+	margin: 0 auto;
+}
+.zhong a {
+	display: block;
+	width: 110px;
+	text-align: center;
+	line-height: 46px;
+	color:#745825;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+}
+.kang{
+	margin:50px 0 50px 20px;
+}
+.kang span,.kang a{
+	display: block;
+	float: left;
+}
+#kang1,#kang2{
+	color:white;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+#kang2{
+	color: #602D08;
+}
+.biaoti{
+	height:45px;
+}
+#beitu{
+	width:950px;
+	height: 515px;
+	overflow: hidden;
+	position: relative;
+}
+.img{
+	width: 950px;
+	height: 515px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;left: 0;
+	display: none;
+}
+#bei{
+	width: 950px;
+	height: 70px;
+	background-color: #332E2B;
+}
+.guang{
+	width:158px;
+	height: 70px;
+	
+	float: left;
+	line-height: 70px;
+	background: url("../images/yisha/7chuanqi/23.jpg");
+	color: #E5BCA1;
+}
+.guang1{
+	background: url("../images/yisha/7chuanqi/24.jpg");
+}
+.guang span{
+	margin-left:56px;	
+}
+.guang:hover{
+	background:url("../images/yisha/7chuanqi/23.jpg"); 
+}
+.clear{
+	clear:both;
+}
+.jianjie{
+	width: 950px;
+	height: 400px;
+	border:1px solid #666666;
+	background: url("../images/yisha/7chuanqi/22.jpg"); 
+}
+.hang{
+	width:600px;
+	height:30px;
+	border-bottom: 1px dotted #666666;
+	overflow: hidden;
+	line-height: 30px;
+	margin: 20px 0 -20px 320px;
+}
+.hang a{
+	color: white;
+}
+.hang span{
+	color: yellow;
+	float: right;
+}
+.jian{
+	margin: 300px 0 0 800px;
+}
+.jian img{
+	margin-left:24px;
+}
+.weishang{
+	width: 1308px;
+	height: 605px;
+	overflow: hidden;
+	margin-left: -179px;
+}
+.weishang img{
+	width: 1308px;
+}
+
+
+
+

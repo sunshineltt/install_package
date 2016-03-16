@@ -1,0 +1,97 @@
+{template "content","header"}
+
+ <div class="bigbox">
+        <div class="huazhuang" style="background:#000">
+ 
+        <div class="photo1"><a href="">
+        	<img src="{IMG_PATH}yisha/7chuanqi/20.jpg"></a>
+        </div>
+        <div id="daohang">
+
+            <div class="zhong">
+                <a href="#kangshuai">抗衰传承</a>
+                <a href="#gongsi">公司简介</a> 
+                <a href="#dashi">大事记</a> 
+                <a href="#pinpai">品牌荣誉</a>
+            </div>
+            <!-- <img src="{IMG_PATH}yisha/7chuanqi/8.png" alt=""> -->
+        </div>
+        <div class="kang" id="kangshuai">
+            <div class="biaoti">
+                <span id="kang1">抗衰传承</span><span id="kang2">About Isamell</span>
+            </div>
+            <div class="center1">  
+            <div id="beitu">
+                <div class="img" style="display:block"><img src="{IMG_PATH}yisha/7chuanqi/21.jpg"></div>
+                <div class="img"><img src="{IMG_PATH}yisha/7chuanqi/26.jpg"></div>
+                <div class="img"><img src="{IMG_PATH}yisha/7chuanqi/27.jpg"></div>
+                <div class="img"><img src="{IMG_PATH}yisha/7chuanqi/28.jpg"></div>
+                <div class="img"><img src="{IMG_PATH}yisha/7chuanqi/29.jpg"></div>
+                <div class="img"><img src="{IMG_PATH}yisha/7chuanqi/30.jpg"></div>
+            </div>
+            </div>
+            <div id="bei">
+                <div class="guang" id="guang"><span>由来</span></div>
+                <div class="guang guang1"><span>诞生</span></div>
+                <div class="guang guang1"><span>创业</span></div>
+                <div class="guang guang1"><span>成长</span></div>
+                <div class="guang guang1"><span>今天</span></div>
+                <div class="guang guang1"><span>未来</span></div>
+            </div>
+        </div>
+
+        <div class="kang" id="gongsi">
+            <span id="kang1">公司简介</span>
+            <span id="kang2">aboutus</span>
+            <div class="clear"></div>
+            <div class="jianjie">
+            {pc:content action="lists" catid="$catid" num="2" siteid="$siteid" order="listorder DESC"}
+            {loop $data $r}
+
+                <div class="hang">
+                	<a href="{$r[url]}">{$r[title]}</a>
+                	<span>2013.11.28</span>
+                </div>
+
+
+
+
+            {/loop}
+ 			{/pc}
+               <!--  <div class="hang">
+               	<a href="">公司简介</a>
+               	<span>2013.11.28</span>
+               </div> -->
+                <div class="jian">
+                    <img src="{IMG_PATH}yisha/7chuanqi/1.gif">
+                    <img src="{IMG_PATH}yisha/7chuanqi/2.gif">
+                </div>
+            </div>       
+        </div>
+
+
+        <div class="kang" id="dashi">
+            <span id="kang1">大事记</span>
+            <span id="kang2">Isamell</span><br>
+        </div>
+        <div class="kang" id="pinpai">
+            <span id="kang1">品牌荣誉</span>
+            <span id="kang2">Honor</span>
+            <div class="clear"></div>
+            <div class="jianjie">
+                <div class="hang"><a href="">品牌荣誉</a><span>2013.12.06</span></div>
+                <div class="hang"><a href="">2011年3.15放心品牌奖牌</a><span>2013.06.05</span></div>
+                <div class="jian">
+                    <img src="{IMG_PATH}yisha/7chuanqi/1.gif">
+                    <img src="{IMG_PATH}yisha/7chuanqi/2.gif">
+                </div>
+            </div>         
+        </div>
+    </div>
+
+
+
+</div>
+
+
+{template "content","footer"}

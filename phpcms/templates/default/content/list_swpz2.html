@@ -1,0 +1,62 @@
+{template "content","header"}
+ <div class="swpzbox-chanpin">
+        <div class="swpz-chanpin">
+             {pc:content action="lists" num="25" catid="$catid" moreinfo="1"}
+                {loop $data $r}
+             <div class="swpz-top-chanpin">
+                  <img  src="{$r[banner]}" alt="">
+             </div><!-- swpz-top结束 -->
+             {/loop}
+            {/pc}
+            <div class="swpz-bottom-chanpin">
+                <div class="swpz-bottom-left-chanpin">
+                    <h2>经典护眼</h2>
+                </div><!-- swpz-bottom-left结束 -->
+
+                <div class="swpz-bottom-right-chanpin">
+                    <a>位置</a>
+                </div><!-- swpz-bottom-right结束 -->
+
+            </div><!-- swpz-bottom结束 -->
+        </div><!-- swpz结束 -->
+    </div><!-- swpzbox结束 -->
+
+{pc:content action="lists" num="25" catid="$catid" moreinfo="1"}
+        {loop $data $a}
+        {if $a[catid]==86}
+    <div class="chanpinboxda">
+        <div class="chanpinda">
+            {php $arr=std_class_object_to_array(json_decode($a[chanpin]))}
+             {loop $arr $c}
+             <div class="chanpin1">
+                    <img src="{$c[url]}" alt="">
+           </div> <!-- chanpin1结束 -->
+           {/loop}
+           {/pc}
+         </div><!-- chanpin结束 -->
+    </div><!-- chanpinboxda结束 -->
+        {else}
+        <div class="chanpinbox">
+         <div class="chanpin">
+            {php $arr=std_class_object_to_array(json_decode($a[chanpin]))}
+             {loop $arr $c}
+             <div class="chanpin1">
+                    <img src="{$c[url]}" alt="">
+           </div> <!-- chanpin1结束 -->
+        {/if}
+        {if $a[catid]==92}
+             
+
+        {/if}
+
+        {/loop}
+        {/pc}
+         </div><!-- chanpin结束 -->
+     </div><!-- chanpinboxda结束 -->
+
+
+    {/loop}
+    {/pc}
+    </div><!-- chanpinbox结束 -->
+
+{template "content","footer"}

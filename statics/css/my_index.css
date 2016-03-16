@@ -1,0 +1,148 @@
+.wrapbox{
+	height:4080px;
+	width:100%;
+	background:#000;
+}
+.wrap{
+	height:4080px;
+	width:950px;
+	margin:0 auto;
+	/*background:#ccc;*/
+ }
+ .shang{
+	height:139px;
+
+ }
+ .con1{
+ 	height:440px;
+ 	width:950px;
+  	overflow: hidden;
+ 	/*margin-bottom:30px;*/
+ 	margin-top:30px;
+ }
+ .con1 a{
+ 	display:block;
+ 	width:100%;
+ 	height:100%;
+ 	
+ }
+ .con1-1{
+ 	background:url("../images/yisha/1index/z.jpg");
+ }
+
+.con1-1:hover{
+ 	background:url("../images/yisha/1index/z.jpg") 0px -440px;
+ }
+
+ .con1-2{
+ 	background:url("../images/yisha/1index/z2.jpg");
+ }
+
+.con1-2:hover{
+ 	background:url("../images/yisha/1index/z2.jpg") 0px -440px;
+ }
+ .con1-3{
+ 	background:url("../images/yisha/1index/z3.jpg");
+ }
+
+.con1-3:hover{
+ 	background:url("../images/yisha/1index/z3.jpg") 0px -440px;
+ }
+ .con1-4{
+ 	background:url("../images/yisha/1index/z4.jpg");
+ }
+
+.con1-4:hover{
+ 	background:url("../images/yisha/1index/z4.jpg") 0px -440px;
+ }
+ .con1-5{
+ 	background:url("../images/yisha/1index/z5.jpg");
+ }
+
+.con1-5:hover{
+ 	background:url("../images/yisha/1index/z5.jpg") 0px -440px;
+ }
+ .con1-6{
+ 	background:url("../images/yisha/1index/z6.jpg");
+ }
+
+.con1-6:hover{
+ 	background:url("../images/yisha/1index/z6.jpg") 0px -440px;
+ }
+ .con1-7{
+ 	background:url("../images/yisha/1index/z7.jpg");
+ }
+
+.con1-7:hover{
+ 	background:url("../images/yisha/1index/z7.jpg") 0px -440px;
+ }
+ .con1-8{
+ 	background:url("../images/yisha/1index/z8.jpg");
+ }
+
+.con1-8:hover{
+ 	background:url("../images/yisha/1index/z8.jpg") 0px -440px;
+ }
+
+
+
+
+/*楼层跳转*/
+.jump{
+	height:263px;
+	width:33px;
+	position:fixed;
+	top:200px;
+	right: 150px;
+}
+.jump li{
+	height:33px;width:33px;text-align: center;line-height: 33px;cursor: pointer;
+}
+.jump li:hover{
+	background:url("../images/yisha/1index/7.png");
+}
+
+
+ .fixedbox{
+ 	width:33px;
+ 	height:264px;
+ 	position:fixed;
+ 	top:200px;
+ 	right:160px;
+ 
+ 	text-align:center;
+ 	line-height:33px;
+ }
+ .fixedbox>li{
+ 	height:33px;
+ 	width:33px;
+ 	position:relative;
+
+ }
+ .fixedbox>li>a{
+ 	color:#999;
+ }
+.fixedbox>li>a:hover{
+	color:#fff;
+	background:rgb(196,177,130);
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	color:#000;
+}
+ 
+.sanjiao{
+	width:0px;
+	height:0px;
+	border:7px solid rgb(196,177,130);
+	border-left:none;
+ 	border-top:7px solid rgba(196,177,130,0);
+ 	border-bottom:7px solid rgba(196,177,130,0);
+ 	position:absolute;
+ 	right:33px;
+ 	top:12px;
+ 	display:none;
+ 	/*196,177,130*/
+ 
+}

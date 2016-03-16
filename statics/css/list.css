@@ -1,0 +1,20 @@
+.center{
+	width:800px;
+	height:1000px;
+	margin:0 auto;
+	border:1px solid #ccc;
+	background:#ccc;
+}
+.zuo{
+	width:300px;
+	height:1000px;
+	float:left;
+	background:red;
+
+}
+.you{
+	width:300px;
+	height:1000px;
+	float:left;
+
+}
